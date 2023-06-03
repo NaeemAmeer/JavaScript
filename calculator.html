@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script>
+        function add(){
+            var a,b,c,sum;
+            
+            a=parseInt(document.getElementById("num1").value)
+            b=parseInt(document.getElementById("num2").value)
+            c=parseInt(document.getElementById("num3").value)
+            sum=a+b;
+            document.getElementById("ans").innerHTML="Your answer is : "+sum;
+        }
+
+        function min(){
+            var a,b,c,min;
+            
+            a=parseInt(document.getElementById("num1").value)
+            b=parseInt(document.getElementById("num2").value)
+            c=parseInt(document.getElementById("num3").value)
+            min=a-b;
+            document.getElementById("ans").innerHTML="Your answer is : "+min;
+        }
+        
+        function sin(){
+            var c,san;
+            
+            
+            c=parseInt(document.getElementById("num3").value);
+            san=Math.sin(c) ;
+            document.getElementById("ans").innerHTML="Your answer is : "+san;
+        }
+        function mul(){
+            var a,b,c,mul;
+            
+            a=parseInt(document.getElementById("num1").value)
+            b=parseInt(document.getElementById("num2").value)
+            c=parseInt(document.getElementById("num3").value)
+            mul=a*b;
+            document.getElementById("ans").innerHTML="Your answer is : "+mul;
+        }
+
+        function divid(){
+            var a,b,c,divid;
+            
+            a=parseInt(document.getElementById("num1").value)
+            b=parseInt(document.getElementById("num2").value)
+            c=parseInt(document.getElementById("num3").value)
+            divid=a/b;
+            document.getElementById("ans").innerHTML="Your answer is : "+divid;
+        }
+        
+        function cos(){
+            var c,caS;
+            
+            
+            c=parseInt(document.getElementById("num3").value);
+            cas=Math.cos(c) ;
+            document.getElementById("ans").innerHTML="Your answer is : "+cas;
+        }
+
+        function tan(){
+            var c,tin;
+            
+            
+            c=parseInt(document.getElementById("num3").value);
+            tin=Math.tan(c) ;
+            document.getElementById("ans").innerHTML="Your answer is : "+tin;
+        }
+    </script>
+  </head>
+  <body>
+    <div class="container bg-primary" >
+
+        <h1 class="text-center display-3">Calculation</h1> <hr>
+        <div class="form-group mt-4">
+       
+            <div class="row">
+            <div class="col-sm-6">
+            <div class="form-group">
+                <label> Enter 1st number:</label> 
+                <input type="text" class="form-control shadow" id="num1">
+            </div>
+            <div class="form-group">
+                <label> Enter 2nd number:</label> 
+                <input type="text" class="form-control shadow"id="num2">
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label> Enter your thita number:</label> 
+                <input type="text" class="form-control shadow"id="num3">
+            </div>
+        </div>
+    </div>
+            
+            <div class="row ">
+                <div class="col-lg-2 col-sm-3 mt-2">
+                    <button class="form-control bg-success text-white" onclick="add()">+</button>
+                </div>
+    
+                <div class="col-lg-2 col-sm-3 mt-2">
+                    <button class="form-control bg-success text-white" onclick="min()">-</button>
+                </div>
+                <div class="col-lg-2 col-sm-3 mt-2 ">
+                    <button class="form-control bg-success text-white" onclick="mul()" >x</button>
+                </div>
+                <div class="col-lg-2 col-sm-3 mt-2">
+                    <button class="form-control bg-success text-white" onclick="divid()">/</button>
+                </div>
+    
+                <div class="col-lg-1 col-sm-3 mt-2 ">
+                    <button class="form-control bg-success text-white" onclick="sin()">sin</button>
+                </div>
+                <div class="col-lg-1 col-sm-3 mt-2">
+                    <button class="form-control bg-success text-white" onclick="cos()">cos</button>
+                </div>
+                <div class="col-lg-1 col-sm-3 mt-2">
+                    <button class="form-control bg-success text-white" onclick="tan()">tan</button>
+                </div>
+    
+                
+            </div>
+           
+            <div class="  form-group mt-3 form-control shadow" id="ans">
+
+        </div>
+        <div class="bg-primary mt-4">Thanks for using</div>
+       
+
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
